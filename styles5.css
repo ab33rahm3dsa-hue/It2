@@ -1,0 +1,192 @@
+/* ===== Login Section ===== */
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: #e6f0fa; /* خلفية فاتحة كحلية */
+}
+
+.login-box {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  width: 350px;
+  text-align: center;
+  animation: fadeIn 0.6s ease;
+  border-top: 5px solid #0a3d62; /* لمسة كحلية داكنة */
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  color: #0a3d62;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+.login-box input:focus {
+  border-color: #0a3d62;
+  box-shadow: 0 0 5px rgba(10,61,98,0.5);
+}
+
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #0a3d62;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.login-box button:hover {
+  background-color: #062c47;
+}
+
+.create-account {
+  margin-top: 15px;
+  cursor: pointer;
+  color: #0a3d62;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.create-account:hover {
+  color: #062c47;
+}
+
+.create-account i {
+  margin-right: 5px;
+}
+
+/* ===== Register Modal ===== */
+.modal {
+  display: none; /* مهم جدًا */
+  position: fixed;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  width: 380px;
+  position: relative;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  text-align: center;
+  border-top: 5px solid #0a3d62;
+  animation: slideDown 0.5s ease;
+}
+
+.modal-content h3 {
+  margin-bottom: 15px;
+  color: #0a3d62;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+.modal-content input:focus {
+  border-color: #0a3d62;
+  box-shadow: 0 0 5px rgba(10,61,98,0.5);
+}
+
+.modal-content button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  transition: 0.3s;
+}
+
+#registerBtn {
+  background-color: #0a3d62;
+}
+
+#registerBtn:hover {
+  background-color: #062c47;
+}
+
+#backToLoginBtn {
+  background-color: #6c757d;
+}
+
+#backToLoginBtn:hover {
+  background-color: #5a6268;
+}
+
+.close {
+  position: absolute;
+  top: 12px; right: 18px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #999;
+}
+
+.close:hover {
+  color: #333;
+}
+
+
+
+/* ===== Alert Box ===== */
+#alertBox {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  display: none;
+  z-index: 1000;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  background-color: #001f3f; /* كحلي */
+}
+
+/* Success و Error States */
+#alertBox.success {
+  background-color: #2ECC40; /* أخضر نجاح */
+}
+
+#alertBox.error {
+  background-color: #FF4136; /* أحمر خطأ */
+}
+/* ===== Animations ===== */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes slideDown {
+  from {transform: translateY(-30px); opacity: 0;}
+  to {transform: translateY(0); opacity: 1;}
+}

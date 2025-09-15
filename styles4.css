@@ -1,0 +1,119 @@
+/* ===== Contact Page Styles ===== */
+
+/* العنوان الرئيسي */
+section h2 {
+  text-align: center;
+  color: #001f3f; /* كحلي */
+  margin: 20px 0;
+  font-size: 26px;
+}
+
+/* الفقرة التوضيحية */
+section p {
+  text-align: center;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* تنسيق النموذج */
+form {
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-left: 4px solid #001f3f;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* تنسيق المدخلات والرسائل */
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+/* زر الإرسال */
+form button {
+  background: #001f3f; /* كحلي */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+form button:hover {
+  background: #00509e;
+}
+
+/* قسم معلومات التواصل */
+#contact-info {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background: #eef2f7;
+  border-radius: 6px;
+}
+
+#contact-info h3 {
+  margin-bottom: 15px;
+  color: #001f3f;
+}
+
+#contact-info p {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* الأيقونات */
+#contact-info i {
+  margin-right: 8px;
+  color: #001f3f;
+}
+
+/* أيقونات السوشيال ميديا */
+#contact-info a {
+  margin: 0 10px;
+  font-size: 20px;
+  color: #001f3f;
+  transition: color 0.3s ease;
+}
+
+#contact-info a:hover {
+  color: #00509e;
+}
+
+
+/* ===== Alert Box ===== 
+#alertBox {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  display: none;
+  z-index: 1000;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  background-color: #001f3f; 
+}*/
+
+/* Success و Error States 
+#alertBox.success {
+  background-color: #2ECC40; 
+}
+
+#alertBox.error {
+  background-color: #FF4136;
+}*/

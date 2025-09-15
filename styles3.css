@@ -1,0 +1,103 @@
+/* ===== Specialties Section (نفس شكل doctors) ===== */
+.specialty-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.specialty-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.specialty-list li {
+  background: #001f3f; /* كحلي */
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.specialty-list li:hover {
+  background: #f1f1f1; /* رمادي فاتح عند المرور */
+}
+
+.specialty-list a {
+  display: block;
+  padding: 10px 18px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.specialty-list li:hover a {
+  color: #001f3f;
+}
+
+/* ===== Booking Form (Responsive) ===== */
+.appointment-form {
+  max-width: 500px;
+  margin: 25px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-left: 4px solid #001f3f;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.appointment-form h3 {
+  color: #001f3f;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.appointment-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: 500;
+  color: #333;
+}
+
+.appointment-form select,
+.appointment-form input[type="date"],
+.appointment-form input[type="time"] {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.appointment-form button {
+  width: 100%;
+  padding: 12px;
+  background: #001f3f; /* كحلي */
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.appointment-form button:hover {
+  background: #004080; /* أزرق غامق عند المرور */
+}
+
+/* ===== Responsive for Mobile ===== */
+@media (max-width: 600px) {
+  .specialty-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .specialty-list li {
+    width: 100%;
+  }
+
+  .appointment-form {
+    width: 90%;
+    padding: 15px;
+  }
+}
